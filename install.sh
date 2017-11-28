@@ -20,3 +20,4 @@ spatialite db.sqlite "CREATE TABLE org_in_dataset (dataset_id text, organization
 spatialite db.sqlite "CREATE TABLE dataset_is_updated(dataset_id text PRIMARY KEY,result text);"
 spatialite db.sqlite "CREATE TABLE email_verification(dataset_id text PRIMARY KEY,  maintainer_email text,author_email text,contact text);"
 spatialite db.sqlite "CREATE TABLE resource_controls(resource_id text PRIMARY KEY,response_code integer,is_downloadable boolean,format_correspondence boolean,is_empty boolean,is_correct boolean,log text,correct_encoding text,declared_format text,found_format text,processed text,diretto text,geo_processed text,geo_valid text,md5sum text);"
+wget https://raw.githubusercontent.com/mholt/PapaParse/master/papaparse.js
